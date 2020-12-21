@@ -37,3 +37,16 @@ function isPalindrome(word){
     console.log(flag);
 }
 isPalindrome("кек");
+
+function matrixMultiplication(k, matrix){
+    let outputStr="";
+    matrix.forEach(vector=>{
+        vector.forEach(el=>{
+            console.log(el);
+            outputStr+=el*k+' ';
+        });
+        outputStr+='\n';
+    });
+    console.log(outputStr);
+}
+matrixMultiplication(69, [[2,2,8],[2,8,2],[8,2,2]]);
