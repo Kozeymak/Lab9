@@ -25,3 +25,15 @@ function popper(popArray) {
     }
 }
 popper(popArray);
+
+function isPalindrome(word){
+    let flag=true;
+    for(let i=0;i<word.length/2;i++){
+        if(word[i].toLowerCase()!=word[word.length-1-i].toLowerCase()){
+            flag=false;
+            break;
+        }
+    }
+    console.log(flag);
+}
+isPalindrome("кек");
